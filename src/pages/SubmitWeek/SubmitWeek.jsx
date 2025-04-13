@@ -59,11 +59,13 @@ function SubmitWeek() {
       <div className='form-createtask-container'>
         <h2 className='text-h2'>Weekly Score</h2>
         <div className="performance">
-          <p className="text-p"> <i class="fa-solid fa-chart-simple icon"></i> {family.familyName} family performance : </p>
-          <p className="text-p"> <i class="fa-solid fa-clipboard icon"></i> {tasksByFamily} Tasks weekly</p>
-          <p className="text-p"> <i class="fa-solid fa-check icon"></i> {tasksDoneByFamily} tasks done</p>
-          <p className="text-p"> <i class="fa-solid fa-hourglass icon"></i> {tasksPendingByFamily} tasks pending</p>
-          <p className="text-p"> <i class="fa-solid fa-gauge icon"></i> Family KPI: {kpiByFamily} %</p>
+
+          <p className="text-p"> <i class="fa-solid fa-chart-simple"></i> {family.familyName} family performance : </p>
+
+          <p className="text-p"> <i class="fa-solid fa-clipboard"></i> {tasksByFamily} Tasks weekly</p>
+          <p className="text-p"> <i class="fa-solid fa-check"></i> {tasksDoneByFamily} tasks done</p>
+          <p className="text-p"> <i class="fa-solid fa-hourglass"></i> {tasksPendingByFamily} tasks pending</p>
+          <p className="text-p"> <i class="fa-solid fa-gauge"></i> Family KPI: {kpiByFamily} %</p>
         </div>
         <div className="performance">
           <img className="img" src={user.userPicture} alt={user.name} />
